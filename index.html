@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -6,24 +7,35 @@
     <title>Zgadnij klub Ekstraklasy</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
+
 <body>
 
-    <h1>Zgadnij klub Ekstraklasy</h1>
+    <h1>Guess the football club!</h1>
 
-    <p>Masz 5 prob, aby odgadnac klub!</p>
+    <p id="licznik">5 Guesses left</p>
 
-    <input type="text" id="nazwaKlubu" placeholder="Wpisz nazwe klubu">
+    <div class="panel-wpisywania">
 
-    <button onclick="sprawdzKlub()">Sprawdz</button>
-    <div class="naglowki">
-        <div>Nazwa</div>
-        <div>Miasto</div>
-        <div>Pojemność</div>
-        <div>Wartość</div>
+        <input type="text"
+               id="nazwaKlubu"
+               placeholder="Enter the club name..."
+               autocomplete="off">
+
+        <div id="podpowiedzi"></div>
+
     </div>
+
+    <div class="naglowki">
+        <div></div>
+        <div>City</div>
+        <div>Stadium Capacity</div>
+        <div>Club Value</div>
+        <div>Distance</div>
+    </div>
+
     <div id="historia"></div>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>
